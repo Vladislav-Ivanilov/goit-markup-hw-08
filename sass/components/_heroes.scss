@@ -1,0 +1,26 @@
+.heroes {
+	background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/heroes.jpg), #2f303a;
+	background-repeat: no-repeat;
+	background-size: cover;
+	max-width: 1600px;
+	margin: 0 auto;
+
+	&__block {
+		padding: 200px 0;
+	}
+
+	&__title {
+		margin: 0 auto;
+		width: 700px;
+
+		text-align: center;
+		text-transform: uppercase;
+
+		color: $primary-white;
+
+		font-weight: 900;
+		font-size: 44px;
+		line-height: 1.3;
+		letter-spacing: 0.06em;
+	}
+}
