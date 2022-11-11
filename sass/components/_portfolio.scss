@@ -1,14 +1,30 @@
 .nav {
 	display: flex;
-	justify-content: center;
-	margin-bottom: 50px;
+	flex-wrap: wrap;
+	margin-bottom: 40px;
+
+	@media screen and (min-width: $tablet) {
+		justify-content: center;
+	}
+
+	@media screen and (min-width: $desktop) {
+		flex-wrap: nowrap;
+		margin-bottom: 50px;
+	}
 
 	&__item {
 		margin-right: 8px;
+		margin-bottom: 15px;
 		&:last-child {
 			margin-right: 0;
+			margin-bottom: 0;
+		}
+
+		@media screen and (min-width: $tablet) {
+			margin-bottom: 0;
 		}
 	}
+
 
 	&__button {
 		padding: 6px 22px;
@@ -35,19 +51,41 @@
 
 .block {
 	&__list {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 30px;
-		padding-bottom: 94px;
+		padding-bottom: 60px;
+
+		@media screen and (min-width: $tablet) {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 30px;
+		}
+
+		@media screen and (min-width: $desktop) {
+			padding-bottom: 94px;
+		}
 	}
 
 	&__item {
-		flex-basis: calc((100% - 60px) / 3);
+		margin-bottom: 30px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		@media screen and (min-width: $tablet) {
+			width: calc((100% - 30px) / 2);
+			margin-bottom: 0;
+		}
+
+		@media screen and (min-width: $desktop) {
+			width: calc((100% - 60px) / 3);
+			margin-bottom: 0;
+		}
 	}
 
 	&__link {
-		display: inline-block;
-
+		display: flex;
+		flex-direction: column;
+		height: 100%;
 		transition: box-shadow 250ms $timing;
 		&:hover,
 		&:focus {
@@ -60,6 +98,8 @@
 	}
 
 	&__info {
+		flex: 1 0 auto;
+		width: 100%;
 		padding: 20px 24px;
 		border: 1px solid #eeeeee;
 		border-top: 0;
@@ -88,6 +128,12 @@
 	position: relative;
 	overflow: hidden;
 	transition: opacity 250ms $timing;
+
+	&__img {
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
 
 	&__title {
 		position: absolute;

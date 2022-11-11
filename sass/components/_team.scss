@@ -2,10 +2,15 @@
 	background-color: #f5f4fa;
 	&__list {
 		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 30px;
+
+		@media screen and (min-width:$desktop) {
+			flex-wrap: nowrap;
+		}
 	}
 	&__item {
-		width: calc((100% - 90px) / 4);
-		margin-right: 30px;
 		padding-bottom: 30px;
 
 		box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -13,10 +18,14 @@
 		background-color: $primary-white;
 
 		text-align: center;
+		@media screen and (min-width:$tablet) {
+			margin-bottom: 0;
+		}
 	}
 	&:last-child {
 		margin-right: 0;
 	}
+
 	&__name {
 		margin-top: 30px;
 		margin-bottom: 10px;

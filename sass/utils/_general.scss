@@ -26,27 +26,59 @@ body {
 }
 
 .container {
-	max-width: 1200px;
 	width: 100%;
-	margin: 0 auto;
 	padding: 0 15px;
+
+	@media screen and (min-width: $tablet) {
+		width: $tablet;
+		margin: 0 auto;
+	}
+
+	@media screen and (min-width: $desktop) {
+		width: $desktop;
+	}
 }
 
 .section {
-	padding-top: 94px;
-	padding-bottom: 94px;
-	&:first-child {
-		padding-bottom: 0;
+	padding-top: 60px;
+	padding-bottom: 60px;
+
+	@media screen and (min-width: $desktop) {
+		padding-top: 94px;
+		padding-bottom: 94px;
 	}
 }
 
 .title {
-	margin-top: 0;
-	margin-bottom: 50px;
+	margin: 0;
+	margin-bottom: 30px;
 
 	text-align: center;
 
 	font-weight: 700;
-	font-size: 36px;
+	font-size: 28px;
 	line-height: 1.16;
+
+	@media screen and (min-width: $desktop) {
+		margin-bottom: 50px;
+
+		font-size: 36px;
+	}
+}
+
+.footer__title {
+	text-align: center;
+	margin: 0;
+	margin-top: 12px;
+	margin-bottom: 20px;
+	color: $primary-white;
+
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	text-transform: uppercase;
+
+	@media screen and (min-width: $desktop) {
+		text-align: left;
+	}
 }

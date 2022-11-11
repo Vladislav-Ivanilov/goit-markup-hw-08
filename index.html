@@ -10,12 +10,12 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-		<link
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
-    <title>goit-markup-hw-07</title>
+    <title>goit-markup-hw-08</title>
   </head>
 
   <body>
@@ -23,46 +23,139 @@
 
     <header class="page-header">
       <div class="container">
-        <!--*nav-->
-        <section class="site-nav">
-          <nav class="main-nav">
-            <a href="./index.html" class="main-nav__logo list"
-              ><span class="main-nav__accent">Web</span>Studio</a
-            >
-            <ul class="main-nav__list list">
-              <li class="main-nav__item">
-                <a href="./index.html" class="main-nav__link main-nav__link--current list"
-                  >Студія</a
+        <div class="mobile-menu">
+          <a href="./index.html" class="main-nav__logo list"
+            ><span class="main-nav__accent">Web</span>Studio</a
+          >
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="menu__icon-menu" width="40" height="40">
+              <use href="./image/icons.svg#menu"></use>
+            </svg>
+          </button>
+
+          <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="menu-toggle js-close-menu">
+              <svg class="menu__icon-menu" width="40" height="40">
+                <use href="./image/icons.svg#cross"></use>
+              </svg>
+            </button>
+
+            <div class="site-nav">
+              <nav class="main-nav">
+                <ul class="main-nav__list list">
+                  <li class="main-nav__item">
+                    <a href="./index.html" class="main-nav__link main-nav__link-current list"
+                      >Студія</a
+                    >
+                  </li>
+                  <li class="main-nav__item">
+                    <a href="./portfolio.html" class="main-nav__link list">Портфоліо</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a href="/" class="main-nav__link list">Контакти</a>
+                  </li>
+                </ul>
+              </nav>
+
+              <div class="block-contact">
+								<ul class="contact list">
+									<li class="contact__item">
+										<a href="tel:+380961111111" class="contact__link contact__tel list">
+											+38 096 111 11 11</a
+										>
+									</li>
+									<li class="contact__item">
+										<a href="mailtoo:info@devstudio.com" class="contact__link contact__mail list">
+											info@devstudio.com</a
+										>
+									</li>
+								</ul>
+	
+								<ul class="contact-network list">
+									<li class="contact-network__item">
+										<a
+											class="contact-network__link list"
+											href="https://www.instagram.com"
+											target="_blank"
+											rel="nonoopener noreferrer"
+										>Instagram
+										</a>
+									</li>
+									<li class="contact-network__item">
+										<a
+											class="contact-network__link list"
+											href="https://twitter.com"
+											target="_blank"
+											rel="nonoopener noreferrer"
+										>Twitter
+										</a>
+									</li>
+									<li class="contact-network__item">
+										<a
+											class="contact-network__link list"
+											href="https://www.facebook.com/"
+											target="_blank"
+											rel="nonoopener noreferrer"
+										>Facebook
+										</a>
+									</li>
+									<li class="contact-network__item">
+										<a
+											class="contact-network__link list"
+											href="https://www.linkedin.com/"
+											target="_blank"
+											rel="nonoopener noreferrer"
+										>LinkedIn 
+										</a>
+									</li>
+								</ul>
+							</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="desktop">
+          <div class="site-nav">
+            <nav class="main-nav">
+              <a href="./index.html" class="main-nav__logo list"
+                ><span class="main-nav__accent">Web</span>Studio</a
+              >
+              <ul class="main-nav__list list">
+                <li class="main-nav__item">
+                  <a href="./index.html" class="main-nav__link main-nav__link-current list"
+                    >Студія</a
+                  >
+                </li>
+                <li class="main-nav__item">
+                  <a href="./portfolio.html" class="main-nav__link list">Портфоліо</a>
+                </li>
+                <li class="main-nav__item"><a href="/" class="main-nav__link list">Контакти</a></li>
+              </ul>
+            </nav>
+            <ul class="contact list">
+              <li class="contact__item">
+                <a href="mailtoo:info@devstudio.com" class="contact__link list">
+                  <svg class="contact__icon" width="16" height="12">
+                    <use href="./image/icons.svg#mail"></use>
+                  </svg>
+                  info@devstudio.com</a
                 >
               </li>
-              <li class="main-nav__item">
-                <a href="./portfolio.html" class="main-nav__link list">Портфоліо</a>
+              <li class="contact__item">
+                <a href="tel:+380961111111" class="contact__link list">
+                  <svg class="contact__icon" width="10" height="16">
+                    <use href="./image/icons.svg#mobile"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
               </li>
-              <li class="main-nav__item"><a href="/" class="main-nav__link list">Контакти</a></li>
             </ul>
-          </nav>
-
-          <!--*contacts-->
-
-          <ul class="contact list">
-            <li class="contact__item">
-              <a href="mailtoo:info@devstudio.com" class="contact__link list">
-                <svg class="contact__icon" width="16" height="12">
-                  <use href="./image/icons.svg#mail"></use>
-                </svg>
-                info@devstudio.com</a
-              >
-            </li>
-            <li class="contact__item">
-              <a href="tel:+380961111111" class="contact__link list">
-                <svg class="contact__icon" width="10" height="16">
-                  <use href="./image/icons.svg#mobile"></use>
-                </svg>
-                +38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-        </section>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -78,8 +171,6 @@
             <button class="button heroes__button list" type="submit" data-modal-open>
               Замовити послугу
             </button>
-
-            <!-- !backdrop -->
 
             <div class="backdrop is-hidden" data-modal>
               <div class="modal">
@@ -143,8 +234,6 @@
           </section>
         </div>
       </div>
-
-      <div class=""></div>
 
       <!--*advantages-->
 
@@ -479,8 +568,6 @@
         </div>
       </section>
 
-      <!-- *Our customers -->
-
       <section class="section">
         <div class="container">
           <h2 class="title">Постійні клієнти</h2>
@@ -535,93 +622,91 @@
     <!--*?footer-->
 
     <footer class="page-footer">
-      <!--*address-contacts-->
-
       <div class="container content">
-        <div class="footer-contacts">
-          <a href="./index.html" class="footer-contacts__logo list"
-            ><span class="footer-contacts__accent">Web</span>Studio</a
-          >
-          <address class="list">
-            <ul class="footer-contacts__list list">
-              <li class="footer-contacts__item">
+        <div class="position">
+          <div class="footer-contacts">
+            <a href="./index.html" class="footer-contacts__logo list"
+              ><span class="footer-contacts__accent">Web</span>Studio</a
+            >
+            <address class="list">
+              <ul class="footer-contacts__list list">
+                <li class="footer-contacts__item">
+                  <a
+                    class="footer-contacts__address list"
+                    href="https://www.google.com.ua/maps"
+                    target="_blank"
+                    rel="nonoopener noreferrer"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="footer-contacts__item">
+                  <a href="mailtoo:info@devstudio.com" class="footer-contacts__link list"
+                    >info@devstudio.com</a
+                  ><br />
+                </li>
+                <li class="footer-contacts__item">
+                  <a href="tel:+380961111111" class="footer-contacts__link list"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="network-footer">
+            <h4 class="footer__title">приєднуйтесь</h4>
+            <ul class="network-footer__list list">
+              <li class="network-footer__item">
                 <a
-                  class="footer-contacts__address list"
-                  href="https://www.google.com.ua/maps"
+                  class="network-footer__link list"
+                  href="https://www.instagram.com"
                   target="_blank"
                   rel="nonoopener noreferrer"
-                  >м. Київ, пр-т Лесі Українки, 26</a
                 >
+                  <svg class="network-footer__icon" width="20" height="20">
+                    <use href="./image/icons.svg#instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer-contacts__item">
-                <a href="mailtoo:info@devstudio.com" class="footer-contacts__link list"
-                  >info@devstudio.com</a
-                ><br />
+              <li class="network-footer__item">
+                <a
+                  class="network-footer__link list"
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="nonoopener noreferrer"
+                >
+                  <svg class="network-footer__icon" width="20" height="20">
+                    <use href="./image/icons.svg#twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer-contacts__item">
-                <a href="tel:+380961111111" class="footer-contacts__link list">+38 096 111 11 11</a>
+              <li class="network-footer__item">
+                <a
+                  class="network-footer__link"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="nonoopener noreferrer"
+                >
+                  <svg class="network-footer__icon" width="20" height="20">
+                    <use href="./image/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="network-footer__item">
+                <a
+                  class="network-footer__link list"
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="nonoopener noreferrer"
+                >
+                  <svg class="network-footer__icon" width="20" height="20">
+                    <use href="./image/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
-
-        <!-- *network footer -->
-
-        <div class="network-footer">
-          <h4 class="footer__title">приєднуйтесь</h4>
-          <ul class="network-footer__list list">
-            <li class="network-footer__item">
-              <a
-                class="network-footer__link list"
-                href="https://www.instagram.com"
-                target="_blank"
-                rel="nonoopener noreferrer"
-              >
-                <svg class="network-footer__icon" width="20" height="20">
-                  <use href="./image/icons.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="network-footer__item">
-              <a
-                class="network-footer__link list"
-                href="https://twitter.com"
-                target="_blank"
-                rel="nonoopener noreferrer"
-              >
-                <svg class="network-footer__icon" width="20" height="20">
-                  <use href="./image/icons.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="network-footer__item">
-              <a
-                class="network-footer__link"
-                href="https://www.facebook.com/"
-                target="_blank"
-                rel="nonoopener noreferrer"
-              >
-                <svg class="network-footer__icon" width="20" height="20">
-                  <use href="./image/icons.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="network-footer__item">
-              <a
-                class="network-footer__link list"
-                href="https://www.linkedin.com/"
-                target="_blank"
-                rel="nonoopener noreferrer"
-              >
-                <svg class="network-footer__icon" width="20" height="20">
-                  <use href="./image/icons.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <!--* Subscription -->
 
         <div class="subscription">
           <h4 class="footer__title">Підпишіться на розсилку</h4>
@@ -642,9 +727,15 @@
             </button>
           </form>
         </div>
-
       </div>
     </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

@@ -1,4 +1,10 @@
 .our-work {
+display: none;
+
+@media screen and (min-width:$desktop) {
+	display: block;
+	
+}
 	&__list {
 		display: flex;
 		padding-bottom: 94px;
