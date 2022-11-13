@@ -32,14 +32,14 @@
             aria-expanded="false"
             aria-controls="mobile-menu"
           >
-            <svg class="menu__icon-menu" width="40" height="40">
+            <svg class="menu__icon-menu" width="24" height="24">
               <use href="./image/icons.svg#menu"></use>
             </svg>
           </button>
 
           <div class="menu-container js-menu-container" id="mobile-menu">
             <button class="menu-toggle js-close-menu">
-              <svg class="menu__icon-menu" width="40" height="40">
+              <svg class="menu__icon-menu" width="19" height="19">
                 <use href="./image/icons.svg#cross"></use>
               </svg>
             </button>
@@ -62,58 +62,58 @@
               </nav>
 
               <div class="block-contact">
-								<ul class="contact list">
-									<li class="contact__item">
-										<a href="tel:+380961111111" class="contact__link contact__tel list">
-											+38 096 111 11 11</a
-										>
-									</li>
-									<li class="contact__item">
-										<a href="mailtoo:info@devstudio.com" class="contact__link contact__mail list">
-											info@devstudio.com</a
-										>
-									</li>
-								</ul>
-	
-								<ul class="contact-network list">
-									<li class="contact-network__item">
-										<a
-											class="contact-network__link list"
-											href="https://www.instagram.com"
-											target="_blank"
-											rel="nonoopener noreferrer"
-										>Instagram
-										</a>
-									</li>
-									<li class="contact-network__item">
-										<a
-											class="contact-network__link list"
-											href="https://twitter.com"
-											target="_blank"
-											rel="nonoopener noreferrer"
-										>Twitter
-										</a>
-									</li>
-									<li class="contact-network__item">
-										<a
-											class="contact-network__link list"
-											href="https://www.facebook.com/"
-											target="_blank"
-											rel="nonoopener noreferrer"
-										>Facebook
-										</a>
-									</li>
-									<li class="contact-network__item">
-										<a
-											class="contact-network__link list"
-											href="https://www.linkedin.com/"
-											target="_blank"
-											rel="nonoopener noreferrer"
-										>LinkedIn 
-										</a>
-									</li>
-								</ul>
-							</div>
+                <ul class="contact list">
+                  <li class="contact__item">
+                    <a href="tel:+380961111111" class="contact__link contact__tel list">
+                      +38 096 111 11 11</a
+                    >
+                  </li>
+                  <li class="contact__item">
+                    <a href="mailtoo:info@devstudio.com" class="contact__link contact__mail list">
+                      info@devstudio.com</a
+                    >
+                  </li>
+                </ul>
+
+                <ul class="contact-network list">
+                  <li class="contact-network__item">
+                    <a
+                      class="contact-network__link list"
+                      href="https://www.instagram.com"
+                      target="_blank"
+                      rel="nonoopener noreferrer"
+                      >Instagram
+                    </a>
+                  </li>
+                  <li class="contact-network__item">
+                    <a
+                      class="contact-network__link list"
+                      href="https://twitter.com"
+                      target="_blank"
+                      rel="nonoopener noreferrer"
+                      >Twitter
+                    </a>
+                  </li>
+                  <li class="contact-network__item">
+                    <a
+                      class="contact-network__link list"
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      rel="nonoopener noreferrer"
+                      >Facebook
+                    </a>
+                  </li>
+                  <li class="contact-network__item">
+                    <a
+                      class="contact-network__link list"
+                      href="https://www.linkedin.com/"
+                      target="_blank"
+                      rel="nonoopener noreferrer"
+                      >LinkedIn
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -299,38 +299,61 @@
           <ul class="list our-work__list">
             <li class="our-work__item">
               <div class="our-work__img-block">
-                <img
-                  class="our-work__img list"
-                  src="./image/our_work_1.jpg"
-                  alt="our-work-image"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./image/our_work/work_img_1.jpg    1x,
+                      ./image/our_work/work_img_1_@2.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="our-work__img"
+                    src="./image/our_work/work_img_1.jpg"
+                    alt="our-work-image"
+                  />
+                </picture>
+
                 <p class="our-work__caption">Десктопні додатки</p>
               </div>
             </li>
 
             <li class="our-work__item">
               <div class="our-work__img-block">
-                <img
-                  class="our-work__img list"
-                  src="./image/our_work_2.jpg"
-                  alt="our-work-image"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./image/our_work/work_img_2.jpg    1x,
+                      ./image/our_work/work_img_2_@2.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+
+                  <img
+                    class="our-work__img"
+                    src="./image/our_work/work_img_2.jpg"
+                    alt="our-work-image"
+                  />
+                </picture>
                 <p class="our-work__caption">Мобільні додатки</p>
               </div>
             </li>
             <li class="our-work__item">
               <div class="our-work__img-block">
-                <img
-                  class="our-work__img list"
-                  src="./image/our_work_3.jpg"
-                  alt="our-work-image"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./image/our_work/work_img_3.jpg    1x,
+                      ./image/our_work/work_img_3_@2.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="our-work__img"
+                    src="./image/our_work/work_img_3.jpg"
+                    alt="our-work-image"
+                  />
+                </picture>
                 <p class="our-work__caption">Дизайнерські рішення</p>
               </div>
             </li>
@@ -345,7 +368,32 @@
           <h2 class="title">Наша команда</h2>
           <ul class="team__list list">
             <li class="team__item">
-              <img src="./image/team_1.jpg" alt="team-portfolio" width="270" height="260" />
+              <picture>
+                <source
+                  srcset="
+                    ./image/team_person/desktop_person_1.jpg 1x,
+                    ./image/team_person/desktop_person_1_@2.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./image/team_person/tablet_person_1.jpg 1x,
+                    ./image/team_person/tablet_person_1_@2.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./image/team_person/mob_person_1.jpg 1x,
+                    ./image/team_person/mob_person_1_@2.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+
+                <img
+                  class="team__img"
+                  src="./image/team_person/mob_person_1.jpg"
+                  alt="team-portfolio"
+                />
+              </picture>
               <h3 class="team__name">Ігор Дем'яненко</h3>
               <p class="team__position">Product Designer</p>
               <ul class="network list">
@@ -400,7 +448,33 @@
               </ul>
             </li>
             <li class="team__item">
-              <img src="./image/team_2.jpg" alt="team-portfolio" width="270" height="260" />
+              <picture>
+                <source
+                  srcset="
+                    ./image/team_person/desktop_person_2.jpg 1x,
+                    ./image/team_person/desktop_person_2_@2.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./image/team_person/tablet_person_2.jpg    1x,
+                    ./image/team_person/tablet_person_2_@2.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./image/team_person/mob_person_2.jpg 1x,
+                    ./image/team_person/mob_person_2_@2.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+
+                <img
+                  class="team__img"
+                  src="./image/team_person/mob_person_2.jpg"
+                  alt="team-portfolio"
+                />
+              </picture>
+
               <h3 class="team__name">Ольга Рєпіна</h3>
               <p class="team__position">Frontend Developer</p>
               <ul class="network list">
@@ -455,7 +529,32 @@
               </ul>
             </li>
             <li class="team__item">
-              <img src="./image/team_3.jpg" alt="team-portfolio" width="270" height="260" />
+              <picture>
+                <source
+                  srcset="
+                    ./image/team_person/desktop_person_3.jpg 1x,
+                    ./image/team_person/desktop_person_3_@2.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./image/team_person/tablet_person_3.jpg 1x,
+                    ./image/team_person/tablet_person_3_@2.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./image/team_person/mob_person_3.jpg 1x,
+                    ./image/team_person/mob_person_3_@2.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+
+                <img
+                  class="team__img"
+                  src="./image/team_person/mob_person_3.jpg"
+                  alt="team-portfolio"
+                />
+              </picture>
               <h3 class="team__name">Микола Тарасов</h3>
               <p class="team__position">Marketing</p>
               <ul class="network list">
@@ -510,7 +609,32 @@
               </ul>
             </li>
             <li class="team__item">
-              <img src="./image/team_4.jpg" alt="team-portfolio" width="270" height="260" />
+              <picture>
+                <source
+                  srcset="
+                    ./image/team_person/desktop_person_4.jpg 1x,
+                    ./image/team_person/desktop_person_4_@2.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./image/team_person/tablet_person_4.jpg 1x,
+                    ./image/team_person/tablet_person_4_@2.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./image/team_person/mob_person_4.jpg 1x,
+                    ./image/team_person/mob_person_4_@2.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+
+                <img
+                  class="team__img"
+                  src="./image/team_person/mob_person_4.jpg"
+                  alt="team-portfolio"
+                />
+              </picture>
               <h3 class="team__name">Михайло Єрмаков</h3>
               <p class="team__position">UI Designer</p>
               <ul class="network list">

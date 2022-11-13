@@ -1,16 +1,12 @@
 .advantages {
-
 	&__list {
-		
 		@media screen and (min-width: $tablet) {
 			display: flex;
 			flex-wrap: wrap;
 			gap: 30px;
 		}
 		@media screen and (min-width: $desktop) {
-			display: flex;
 			flex-wrap: nowrap;
-			gap: 30px;
 		}
 	}
 
@@ -22,19 +18,18 @@
 		}
 
 		@media screen and (min-width: $desktop) {
-			width: calc((100% - 90px) / 4)
+			width: calc((100% - 90px) / 4);
 		}
 	}
 
 	&__icon-block {
-		margin-bottom: 30px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 
 		width: 100%;
 		height: 120px;
-
+		margin-bottom: 30px;
 		border-radius: 4px;
 
 		background-color: #f5f4fa;
@@ -43,6 +38,7 @@
 	&__title {
 		text-align: center;
 		margin: 0;
+
 		font-weight: 700;
 		font-size: 14px;
 		line-height: 1.14;

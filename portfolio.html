@@ -19,7 +19,7 @@
   </head>
   <body>
     <!--? header -->
-		
+
     <header class="page-header">
       <div class="container">
         <div class="mobile-menu">
@@ -31,14 +31,14 @@
             aria-expanded="false"
             aria-controls="mobile-menu"
           >
-            <svg class="menu__icon-menu" width="40" height="40">
+            <svg class="menu__icon-menu" width="24" height="24">
               <use href="./image/icons.svg#menu"></use>
             </svg>
           </button>
 
           <div class="menu-container js-menu-container" id="mobile-menu">
             <button class="menu-toggle js-close-menu">
-              <svg class="menu__icon-menu" width="40" height="40">
+              <svg class="menu__icon-menu" width="19" height="19">
                 <use href="./image/icons.svg#cross"></use>
               </svg>
             </button>
@@ -47,12 +47,12 @@
               <nav class="main-nav">
                 <ul class="main-nav__list list">
                   <li class="main-nav__item">
-                    <a href="./index.html" class="main-nav__link  list"
-                      >Студія</a
-                    >
+                    <a href="./index.html" class="main-nav__link list">Студія</a>
                   </li>
                   <li class="main-nav__item">
-                    <a href="./portfolio.html" class="main-nav__link main-nav__link-current list">Портфоліо</a>
+                    <a href="./portfolio.html" class="main-nav__link main-nav__link-current list"
+                      >Портфоліо</a
+                    >
                   </li>
                   <li class="main-nav__item">
                     <a href="/" class="main-nav__link list">Контакти</a>
@@ -61,58 +61,58 @@
               </nav>
 
               <div class="block-contact">
-								<ul class="contact list">
-									<li class="contact__item">
-										<a href="tel:+380961111111" class="contact__link contact__tel list">
-											+38 096 111 11 11</a
-										>
-									</li>
-									<li class="contact__item">
-										<a href="mailtoo:info@devstudio.com" class="contact__link contact__mail list">
-											info@devstudio.com</a
-										>
-									</li>
-								</ul>
-	
-								<ul class="contact-network list">
-									<li class="contact-network__item">
-										<a
-											class="contact-network__link list"
-											href="https://www.instagram.com"
-											target="_blank"
-											rel="nonoopener noreferrer"
-										>Instagram
-										</a>
-									</li>
-									<li class="contact-network__item">
-										<a
-											class="contact-network__link list"
-											href="https://twitter.com"
-											target="_blank"
-											rel="nonoopener noreferrer"
-										>Twitter
-										</a>
-									</li>
-									<li class="contact-network__item">
-										<a
-											class="contact-network__link list"
-											href="https://www.facebook.com/"
-											target="_blank"
-											rel="nonoopener noreferrer"
-										>Facebook
-										</a>
-									</li>
-									<li class="contact-network__item">
-										<a
-											class="contact-network__link list"
-											href="https://www.linkedin.com/"
-											target="_blank"
-											rel="nonoopener noreferrer"
-										>LinkedIn 
-										</a>
-									</li>
-								</ul>
-							</div>
+                <ul class="contact list">
+                  <li class="contact__item">
+                    <a href="tel:+380961111111" class="contact__link contact__tel list">
+                      +38 096 111 11 11</a
+                    >
+                  </li>
+                  <li class="contact__item">
+                    <a href="mailtoo:info@devstudio.com" class="contact__link contact__mail list">
+                      info@devstudio.com</a
+                    >
+                  </li>
+                </ul>
+
+                <ul class="contact-network list">
+                  <li class="contact-network__item">
+                    <a
+                      class="contact-network__link list"
+                      href="https://www.instagram.com"
+                      target="_blank"
+                      rel="nonoopener noreferrer"
+                      >Instagram
+                    </a>
+                  </li>
+                  <li class="contact-network__item">
+                    <a
+                      class="contact-network__link list"
+                      href="https://twitter.com"
+                      target="_blank"
+                      rel="nonoopener noreferrer"
+                      >Twitter
+                    </a>
+                  </li>
+                  <li class="contact-network__item">
+                    <a
+                      class="contact-network__link list"
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      rel="nonoopener noreferrer"
+                      >Facebook
+                    </a>
+                  </li>
+                  <li class="contact-network__item">
+                    <a
+                      class="contact-network__link list"
+                      href="https://www.linkedin.com/"
+                      target="_blank"
+                      rel="nonoopener noreferrer"
+                      >LinkedIn
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -125,12 +125,12 @@
               >
               <ul class="main-nav__list list">
                 <li class="main-nav__item">
-                  <a href="./index.html" class="main-nav__link list"
-                    >Студія</a
-                  >
+                  <a href="./index.html" class="main-nav__link list">Студія</a>
                 </li>
                 <li class="main-nav__item">
-                  <a href="./portfolio.html" class="main-nav__link main-nav__link-current list">Портфоліо</a>
+                  <a href="./portfolio.html" class="main-nav__link main-nav__link-current list"
+                    >Портфоліо</a
+                  >
                 </li>
                 <li class="main-nav__item"><a href="/" class="main-nav__link list">Контакти</a></li>
               </ul>
@@ -189,13 +189,36 @@
             <li class="block__item">
               <a href="#" class="block__link list">
                 <div class="effects">
-                  <img
-                    class="effects__img"
-                    src="./image/portfolio/portfolio_1.jpg"
-                    alt="foto-portfolio"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./image/portfolio/desktop_portfolio_1.jpg    1x,
+                        ./image/portfolio/desktop_portfolio_1_@2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/tablet_portfolio_1.jpg    1x,
+                        ./image/portfolio/tablet_portfolio_1_@2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/mobile_portfolio_1.jpg    1x,
+                        ./image/portfolio/mobile_portfolio_1_@2.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+
+                    <img
+                      class="effects__img"
+                      src="./image/portfolio/mobile_portfolio_1.jpg"
+                      alt="foto-portfolio"
+                    />
+                  </picture>
+
                   <p class="effects__title">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -211,13 +234,35 @@
             <li class="block__item">
               <a href="#" class="block__link list">
                 <div class="effects">
-                  <img
-                    class="effects__img"
-                    src="./image/portfolio/portfolio_2.jpg"
-                    alt="foto-portfolio"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./image/portfolio/desktop_portfolio_2.jpg    1x,
+                        ./image/portfolio/desktop_portfolio_2_@2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/tablet_portfolio_2.jpg    1x,
+                        ./image/portfolio/tablet_portfolio_2_@2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/mobile_portfolio_2.jpg    1x,
+                        ./image/portfolio/mobile_portfolio_2_@2.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+
+                    <img
+                      class="effects__img"
+                      src="./image/portfolio/mobile_portfolio_2.jpg"
+                      alt="foto-portfolio"
+                    />
+                  </picture>
                   <p class="effects__title">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -233,13 +278,35 @@
             <li class="block__item">
               <a href="#" class="block__link list">
                 <div class="effects">
-                  <img
-                    class="effects__img"
-                    src="./image/portfolio/portfolio_3.jpg"
-                    alt="foto-portfolio"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./image/portfolio/desktop_portfolio_3.jpg    1x,
+                        ./image/portfolio/desktop_portfolio_3_@2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/tablet_portfolio_3.jpg    1x,
+                        ./image/portfolio/tablet_portfolio_3_@2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/mobile_portfolio_3.jpg    1x,
+                        ./image/portfolio/mobile_portfolio_3_@2.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+
+                    <img
+                      class="effects__img"
+                      src="./image/portfolio/mobile_portfolio_3.jpg"
+                      alt="foto-portfolio"
+                    />
+                  </picture>
                   <p class="effects__title">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -255,13 +322,35 @@
             <li class="block__item">
               <a href="#" class="block__link list">
                 <div class="effects">
-                  <img
-                    class="effects__img"
-                    src="./image/portfolio/portfolio_4.jpg"
-                    alt="foto-portfolio"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./image/portfolio/desktop_portfolio_4.jpg    1x,
+                        ./image/portfolio/desktop_portfolio_4_@2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/tablet_portfolio_4.jpg    1x,
+                        ./image/portfolio/tablet_portfolio_4_@2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/mobile_portfolio_4.jpg    1x,
+                        ./image/portfolio/mobile_portfolio_4_@2.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+
+                    <img
+                      class="effects__img"
+                      src="./image/portfolio/mobile_portfolio_4.jpg"
+                      alt="foto-portfolio"
+                    />
+                  </picture>
                   <p class="effects__title">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -277,13 +366,35 @@
             <li class="block__item">
               <a href="#" class="block__link list">
                 <div class="effects">
-                  <img
-                    class="effects__img"
-                    src="./image/portfolio/portfolio_5.jpg"
-                    alt="foto-portfolio"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./image/portfolio/desktop_portfolio_5.jpg    1x,
+                        ./image/portfolio/desktop_portfolio_5_@2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/tablet_portfolio_5.jpg    1x,
+                        ./image/portfolio/tablet_portfolio_5_@2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/mobile_portfolio_5.jpg    1x,
+                        ./image/portfolio/mobile_portfolio_5_@2.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+
+                    <img
+                      class="effects__img"
+                      src="./image/portfolio/mobile_portfolio_5.jpg"
+                      alt="foto-portfolio"
+                    />
+                  </picture>
                   <p class="effects__title">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -299,13 +410,35 @@
             <li class="block__item">
               <a href="#" class="block__link list">
                 <div class="effects">
-                  <img
-                    class="effects__img"
-                    src="./image/portfolio/portfolio_6.jpg"
-                    alt="foto-portfolio"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./image/portfolio/desktop_portfolio_6.jpg    1x,
+                        ./image/portfolio/desktop_portfolio_6_@2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/tablet_portfolio_6.jpg    1x,
+                        ./image/portfolio/tablet_portfolio_6_@2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/mobile_portfolio_6.jpg    1x,
+                        ./image/portfolio/mobile_portfolio_6_@2.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+
+                    <img
+                      class="effects__img"
+                      src="./image/portfolio/mobile_portfolio_6.jpg"
+                      alt="foto-portfolio"
+                    />
+                  </picture>
                   <p class="effects__title">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -321,13 +454,35 @@
             <li class="block__item">
               <a href="#" class="block__link list">
                 <div class="effects">
-                  <img
-                    class="effects__img"
-                    src="./image/portfolio/portfolio_7.jpg"
-                    alt="foto-portfolio"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./image/portfolio/desktop_portfolio_7.jpg    1x,
+                        ./image/portfolio/desktop_portfolio_7_@2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/tablet_portfolio_7.jpg    1x,
+                        ./image/portfolio/tablet_portfolio_7_@2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/mobile_portfolio_7.jpg    1x,
+                        ./image/portfolio/mobile_portfolio_7_@2.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+
+                    <img
+                      class="effects__img"
+                      src="./image/portfolio/mobile_portfolio_7.jpg"
+                      alt="foto-portfolio"
+                    />
+                  </picture>
                   <p class="effects__title">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -343,13 +498,35 @@
             <li class="block__item">
               <a href="#" class="block__link list">
                 <div class="effects">
-                  <img
-                    class="effects__img"
-                    src="./image/portfolio/portfolio_8.jpg"
-                    alt="foto-portfolio"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./image/portfolio/desktop_portfolio_8.jpg    1x,
+                        ./image/portfolio/desktop_portfolio_8_@2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/tablet_portfolio_8.jpg    1x,
+                        ./image/portfolio/tablet_portfolio_8_@2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/mobile_portfolio_8.jpg    1x,
+                        ./image/portfolio/mobile_portfolio_8_@2.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+
+                    <img
+                      class="effects__img"
+                      src="./image/portfolio/mobile_portfolio_8.jpg"
+                      alt="foto-portfolio"
+                    />
+                  </picture>
                   <p class="effects__title">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -365,13 +542,35 @@
             <li class="block__item">
               <a href="#" class="block__link list">
                 <div class="effects">
-                  <img
-                    class="effects__img"
-                    src="./image/portfolio/portfolio_9.jpg"
-                    alt="foto-portfolio"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./image/portfolio/desktop_portfolio_9.jpg    1x,
+                        ./image/portfolio/desktop_portfolio_9_@2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/tablet_portfolio_9.jpg    1x,
+                        ./image/portfolio/tablet_portfolio_9_@2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./image/portfolio/mobile_portfolio_9.jpg    1x,
+                        ./image/portfolio/mobile_portfolio_9_@2.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+
+                    <img
+                      class="effects__img"
+                      src="./image/portfolio/mobile_portfolio_9.jpg"
+                      alt="foto-portfolio"
+                    />
+                  </picture>
                   <p class="effects__title">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи

@@ -1,29 +1,33 @@
 .team {
 	background-color: #f5f4fa;
+
 	&__list {
 		display: flex;
 		justify-content: center;
 		flex-wrap: wrap;
 		gap: 30px;
 
-		@media screen and (min-width:$desktop) {
+		@media screen and (min-width: $desktop) {
 			flex-wrap: nowrap;
 		}
 	}
 	&__item {
+		width: 100%;
 		padding-bottom: 30px;
+
+		text-align: center;
 
 		box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 		border-radius: 0px 0px 4px 4px;
 		background-color: $primary-white;
 
-		text-align: center;
-		@media screen and (min-width:$tablet) {
-			margin-bottom: 0;
+		@media screen and (min-width: $tablet) {
+			width: calc((100% - 30px) / 2);
 		}
 	}
-	&:last-child {
-		margin-right: 0;
+
+	&__img {
+		width: 100%;
 	}
 
 	&__name {
@@ -34,14 +38,14 @@
 		font-size: 16px;
 		line-height: 1.18;
 	}
+
 	&__position {
 		margin: 0;
 		margin-bottom: 16px;
 
-		color: $title-text-color;
-
 		font-size: 16px;
 		line-height: 1.18;
+		color: $title-text-color;
 	}
 }
 
@@ -64,6 +68,7 @@
 
 		width: 100%;
 		padding: 12px;
+
 		border-radius: 50%;
 		transition: background-color 250ms $timing;
 		&:hover,

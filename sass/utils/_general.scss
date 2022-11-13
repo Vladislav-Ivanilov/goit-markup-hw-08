@@ -28,10 +28,10 @@ body {
 .container {
 	width: 100%;
 	padding: 0 15px;
+	margin: 0 auto;
 
 	@media screen and (min-width: $tablet) {
 		width: $tablet;
-		margin: 0 auto;
 	}
 
 	@media screen and (min-width: $desktop) {
@@ -68,15 +68,16 @@ body {
 
 .footer__title {
 	text-align: center;
+	
 	margin: 0;
 	margin-top: 12px;
 	margin-bottom: 20px;
-	color: $primary-white;
-
+	
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 1.14;
 	text-transform: uppercase;
+	color: $primary-white;
 
 	@media screen and (min-width: $desktop) {
 		text-align: left;

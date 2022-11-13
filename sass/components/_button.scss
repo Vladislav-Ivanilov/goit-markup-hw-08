@@ -2,6 +2,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
 	width: fit-content;
 	margin: 30px auto 0 auto;
 	padding: 10px 32px;
@@ -9,9 +10,7 @@
 	border-radius: 4px;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	cursor: pointer;
-
 	background-color: $accent-color;
-	color: $primary-white;
 
 	transition: background-color 250ms $timing;
 
@@ -19,6 +18,8 @@
 	font-size: 16px;
 	line-height: 1.87;
 	letter-spacing: 0.06em;
+	color: $primary-white;
+
 	&:hover,
 	&:focus {
 		background-color: #188ce8;

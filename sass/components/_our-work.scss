@@ -1,18 +1,20 @@
 .our-work {
-display: none;
+	display: none;
 
-@media screen and (min-width:$desktop) {
-	display: block;
-	
-}
+	@media screen and (min-width: $desktop) {
+		display: block;
+	}
 	&__list {
 		display: flex;
+
 		padding-bottom: 94px;
 	}
 	&__item {
 		width: calc((100% - 60px) / 3);
 		margin-right: 30px;
+
 		z-index: 100;
+
 		&:last-child {
 			margin-right: 30px;
 		}
@@ -20,9 +22,11 @@ display: none;
 	&__img-block {
 		position: relative;
 	}
+
 	&__img {
 		display: block;
 	}
+
 	&__caption {
 		position: absolute;
 		bottom: 0;
@@ -32,16 +36,16 @@ display: none;
 		justify-content: center;
 		align-items: center;
 
-		margin: 0 auto;
 		width: 100%;
 		height: 70px;
+		margin: 0 auto;
 
 		background-color: rgba(47, 48, 58, 0.8);
-		color: $primary-white;
 
 		font-weight: 700;
 		font-size: 14px;
 		line-height: 1.14;
 		text-transform: uppercase;
+		color: $primary-white;
 	}
 }
